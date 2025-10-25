@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YantraFix Gurgaon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="tooplate-stellaris-style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cosmic logo with planet and orbit -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="12" fill="#7c3aed"/>
+                    
+                    <!-- Orbiting elements -->
+                    <circle cx="85" cy="50" r="4" fill="#f59e0b">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="15" cy="50" r="3" fill="#ec4899">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="-360 50 50" dur="12s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Central glow -->
+                    <circle cx="50" cy="50" r="8" fill="#f59e0b" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">YantraFix</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#missions">FIXES</a></li>
+                    <li><a href="#equipment">PRICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Star layers -->
+    <div class="stars-layer"></div>
+    
+    <!-- Floating space orbs -->
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    
+    <!-- Shooting stars -->
+    <div class="shooting-star" style="--delay: 0s; --top: 10%; --left: 10%;"></div>
+    <div class="shooting-star" style="--delay: 1.5s; --top: 30%; --left: 60%;"></div>
+    <div class="shooting-star" style="--delay: 3s; --top: 20%; --left: 80%;"></div>
+    <div class="shooting-star" style="--delay: 4.5s; --top: 60%; --left: 30%;"></div>
+    <div class="shooting-star" style="--delay: 6s; --top: 80%; --left: 70%;"></div>
+    
+        <div class="hero-content">
+            <h1 class="cosmic-title">YANTRAFIX</h1>
+            <p class="subtitle">Where Technology Finds Its Cure.</p>
+        </div>
+        <a href="#about" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">ABOUT US</h2>
+        <div class="about-section">
+            <div class="about-hero">
+                <p class="about-description">
+                    Welcome to Yantrafix, Gurgaon’s most trusted destination for mobile repairing, gadget servicing, and premium tech accessories. We specialize in bringing your devices back to life — whether it’s a cracked smartphone screen, battery issue, software malfunction, or laptop repair, our certified experts have you covered.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-card-icon">🔬</span>
+                    <h4>Why Choose Yantrafix?</h4>
+                    <p>Because we fix it right — the first time. At Yantrafix Gurgaon, we offer fast, reliable, and affordable mobile repairs using genuine parts and expert care. From phones to accessories, we’re your trusted tech partner for every fix.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">📱</span>
+                    <h4>Brands We Fix</h4>
+                    <p>Apple (iPhone, iPad) | Samsung | OnePlus | Xiaomi (Mi, Redmi) | Realme | Oppo | Vivo | Motorola | Nokia | Google Pixel | Huawei | Honor | Lenovo | Asus | Lava | Infinix | Tecno | Sony | LG | HTC | Micromax | Nothing Phone</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">💻</span>
+                    <h4>Laptops & Computers</h4>
+                    <p>Apple (MacBook, iMac) | Dell | HP | Lenovo | Asus | Acer | Microsoft Surface | Samsung | MSI | Razer</p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-card-icon">⌚</span>
+                    <h4>Smartwatches & Wearables</h4>
+                    <p>Apple Watch | Samsung Galaxy Watch | Fitbit | Noise | Boat | Fire-Boltt | Amazfit | Fossil | Realme Watch</p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-card-icon">🎧</span>
+                    <h4>Accessories & Gadgets</h4>
+                    <p>AirPods | Earbuds | Bluetooth speakers | Power banks | Chargers | Cables | Screen protectors | Mobile covers | Smart bands</p>
+                </div>
+
+
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-number">900+</div>
+                    <div class="achievement-label">Device Fixed</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">1500+</div>
+                    <div class="achievement-label">Happy Customers</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">20+</div>
+                    <div class="achievement-label">Service Centre Support</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">50000+</div>
+                    <div class="achievement-label">Product Sold</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="missions" class="missions-section fade-in">
+        <div class="missions-container">
+            <h2 class="section-title">What we fix ?</h2>
+            
+            <div class="mission-tabs">
+                <button class="mission-tab active" data-tab="exploration">HARDWARE</button>
+                <button class="mission-tab" data-tab="research">SOFTWARE</button>
+                <button class="mission-tab" data-tab="discovery">PROJECTS</button>
+                <button class="mission-tab" data-tab="future">TECHNOLOGY</button>
+            </div>
+            
+            <div class="mission-content active" id="exploration">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>hardware issues including</h4>
+                        <p>broken screens, battery problems, charging port faults, speaker or mic issues, camera replacement, power and volume button repairs, motherboard faults, water damage, back panel replacement, and overheating or short-circuit problems</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="research">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>software issues including</h4>
+                        <p>slow performance, hanging or crashing apps, software updates, OS installation, data recovery, virus removal, network or Wi-Fi issues, phone unlocking, and system errors</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="discovery">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>end-to-end tech project solutions</h4>
+                        <p>custom app development, website design, IoT projects, automation systems, smart gadgets, software integration, and tech prototyping</p>
+                        <!-- <span class="mission-status">Confirmed</span> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="future">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>Hardware & Repair</h4>
+                        <p>Precision screwdrivers, ESD mats & wrist straps, heat guns, hot air rework stations, suction cups, opening picks, spudgers, tweezers, multimeters, microscopes for PCB/IC repair, soldering irons, chip-off & JTAG tools, screen separator machines, ultrasonic cleaners, battery testers.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h4>Software Tools</h4>
+                        <p>Miracle Box, Octopus Box, Chimera, Odin, SP Flash Tool, iTunes, Samsung Smart Switch, Mobile repair diagnostic software, Antivirus & data recovery tools, Firmware flashing & unlocking software.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h4>Programming & Development</h4>
+                        <p>Python, Java, C, C++, JavaScript, PHP, HTML, CSS, SQL, Kotlin, Swift, Dart (for Flutter apps), and MATLAB (for embedded systems & IoT projects).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment" class="fade-in">
+        <h2 class="section-title">OUR STARTING PRICES</h2>
+        <div class="equipment-container">
+            <div class="equipment-item">
+                <span>Charger <br> Rs. 200</span>
+            </div>
+            <div class="equipment-item">
+                <span>Datacable <br> Rs. 40</span>
+            </div>
+            <div class="equipment-item">
+                <span>Tempered Glass <br> Rs. 30</span>
+            </div>
+            <div class="equipment-item">
+                <span>Smart Watch <br> Rs. 300</span>
+            </div>
+            <div class="equipment-item">
+                <span>Power Bank <br> Rs. 250</span>
+            </div>
+            <div class="equipment-item">
+                <span>Bluetooth Headset <br> Rs. 200</span>
+            </div>
+            <div class="equipment-item">
+                <span>Speaker <br> Rs. 200</span>
+            </div>
+            <div class="equipment-item">
+                <span>Display Repair <br> Rs. 250</span>
+            </div>
+            <div class="equipment-item">
+                <span>Charging Port Repair <br> Rs. 50</span>
+            </div>
+            <div class="equipment-item">
+                <span>Mic Repair <br> Rs. 100</span>
+            </div>
+
+        </div>
+    </section>
+<!--
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">RESEARCH COLLABORATION</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Principal Investigator Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Institution Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Research Proposal or Collaboration Inquiry" required></textarea>
+            </div>
+            <button type="submit" class="launch-btn">SUBMIT PROPOSAL</button>
+        </form>
+    </section>
+-->
+
+<section id="contact" class="fade-in">
+<footer>
+    <div class="footer-content">
+        <!-- Services Section -->
+        <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Mobile Repair</a></li>
+                <li><a href="#">Laptop Repair</a></li>
+                <li><a href="#">Tablet & iPad Repair</a></li>
+                <li><a href="#">Hardware & Software Troubleshooting</a></li>
+                <li><a href="#">Accessory Replacement</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact & Social Section -->
+        <div class="footer-section">
+            <h3>Contact & Social</h3>
+            <p style="color: var(--star-silver); margin-bottom: 15px;">
+                Call us: +91 9654473444<br>
+                Email: yantrafix@gmail.com <br>
+                Visit: F-124, Dharam Colony, Palam Vihar, Gurgaon, Haryana 122017
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12A10 10 0 1 0 2 12a10 10 0 0 0 20 0zm-5-2h-3V7h-2v3h-2v2h2v5h2v-5h3v-2z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5-.2.6-.5 1-1 1.4-.4.4-.8.7-1.4.9-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5.2-.6.5-1 1-1.4.4-.4.8-.7 1.4-.9.5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7 .1 5.6.2 4.6.4 3.8.7c-.9.3-1.7.8-2.5 1.6S.9 4.1.6 5c-.3.9-.5 1.9-.6 3.2C0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.3.3 2.3.6 3.2.3.9.8 1.7 1.6 2.5s1.6 1.3 2.5 1.6c.9.3 1.9.5 3.2.6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.3-.3 3.2-.6.9-.3 1.7-.8 2.5-1.6s1.3-1.6 1.6-2.5c.3-.9.5-1.9.6-3.2.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.3-.6-3.2-.3-.9-.8-1.7-1.6-2.5S20.1.9 19.2.6c-.9-.3-1.9-.5-3.2-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8.1 4 4 0 0 1 0 8.1zm6.4-11.5a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="WhatsApp">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.09 1.52 5.84L0 24l6.34-1.48C8.09 23.45 10.06 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm6.22 17.1c-.26.73-1.5 1.36-2.08 1.45-.53.09-1.18.13-2.23-.18-1.05-.31-2.67-1.03-4.28-2.2-1.58-1.16-2.63-2.6-2.94-3.65-.32-1.05-.18-1.55.12-1.72.3-.17.67-.25 1.01-.25.34 0 .67.01.96.01.29 0 .68-.11 1.04.53.36.63 1.19 2.04 1.3 2.19.12.15.19.33.02.53-.17.19-.25.31-.5.53-.25.22-.53.49-.76.65-.25.17-.51.34-.26.67.25.34 1.1 1.81 2.36 2.92 1.63 1.45 2.99 1.92 3.45 2.13.46.21.73.18.99-.11.26-.29 1.14-1.31 1.45-1.77.31-.46.62-.38.99-.23.36.15 1.15.54 1.31 1.01.17.47.17.86.12.95z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 YantraFix. All rights reserved.</p>
+    </div>
+</footer>
+
+    </section>
+
+
+<script src="tooplate-stellaris-script.js"></script>
+</body>
+</html>
