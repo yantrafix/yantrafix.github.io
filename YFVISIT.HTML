@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YantraFix</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+    padding: 12px;
+    background: #000;
+    border-bottom: 2px solid red;
+}
+
+.logo svg {
+    width: 140px;
+}
+
+/* SECTIONS */
+.section {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.red {
+    background: #e60000;
+    color: white;
+}
+
+.black {
+    background: #000;
+    color: #e60000;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* ICON + TEXT */
+.icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* FLOATING BUTTONS */
+.floating {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* COLORS */
+.whatsapp {
+    background: #25D366;
+}
+
+.call {
+    background: #0A3D91;
+}
+
+/* SVG ICON SIZE */
+.btn svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGO -->
+<div class="logo">
+<svg viewBox="0 0 125.54 70.99">
+  <polyline fill="#fff" points=".89 0 5.5 0 22.17 0 39.9 30.95 56.92 0 64.9 0 39.54 42.93 18.62 6.22 11.35 6.52 35.82 49.3 26.95 64.78 34.93 64.78 71.81 0 125.54 0 114.19 19.57 82.28 19.72 79.08 25.49 112.24 25.64 101.43 44.45 67.91 44.75 53.02 70.99 45.04 70.99 64.54 38.08 98.24 38.23 101.78 31.86 68.09 32.01 79.08 13.05 110.83 12.74 114.37 6.83 75.36 6.83 38.48 70.99 15.96 70.99 28.55 49.61 0 0"/>
+</svg>
+</div>
+
+<!-- SECTIONS -->
+<div class="section red" onclick="openLocation()">
+    <div class="icon">📍</div>
+    <div class="text">LOCATION</div>
+</div>
+
+<div class="section black" onclick="openSite()">
+    <div class="icon">🛒</div>
+    <div class="text">BUY & SELL</div>
+</div>
+
+<div class="section red" onclick="openSite()">
+    <div class="icon">ℹ️</div>
+    <div class="text">WHO WE ARE</div>
+</div>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+
+    <!-- WHATSAPP -->
+    <a class="btn whatsapp" href="https://wa.me/919654473444" target="_blank">
+        <svg viewBox="0 0 24 24">
+            <path d="M20.5 3.5A11.8 11.8 0 0012.1 0C5.5 0 .2 5.3.2 11.9c0 2.1.6 4.2 1.7 6L0 24l6.3-1.7c1.7.9 3.6 1.4 5.6 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.3-8.3zM12.1 21.5c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.7 1 1-3.6-.2-.3a9.6 9.6 0 01-1.5-5.2c0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 9.6-9.6 9.6zm5.3-7.2c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.3-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.3 3.9.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.1-.2-.2-.4-.3z"/>
+        </svg>
+    </a>
+
+    <!-- CALL -->
+    <a class="btn call" href="tel:9654473444">
+        <svg viewBox="0 0 24 24">
+            <path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.9.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.1 22 2 13.9 2 3.5c0-.6.4-1 1-1H6.5c.6 0 1 .4 1 1 0 1.4.2 2.7.6 3.9.1.4 0 .8-.3 1.1l-2.2 2.3z"/>
+        </svg>
+    </a>
+
+</div>
+
+<script>
+function openLocation() {
+    window.open("https://maps.app.goo.gl/zTtr1AtRkAugzxgL6?g_st=ac", "_blank");
+}
+
+function openSite() {
+    window.open("https://yantrafix.github.io/", "_blank");
+}
+</script>
+
+</body>
+</html>
